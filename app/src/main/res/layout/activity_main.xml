@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/halo"
+        android:layout_width="wrap_content"
+        android:layout_height="121dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="42dp"
+        android:layout_marginBottom="16dp"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/welcome_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_below="@id/halo"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Kai Tubes"
+        android:textAllCaps="true"
+        android:fontFamily="@font/audrey"
+        android:textColor="#3F51B5"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/pilih_kategori"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/headline"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="10dp"
+        android:text="Pilih kategori berita"
+        android:textColor="#3F51B5"
+        android:fontFamily="@font/tekton"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/profil"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_above="@id/feedback"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="250dp"
+        android:layout_marginBottom="1dp"
+        android:backgroundTint="#00FFFFFF"
+        android:onClick="profil"
+        android:fontFamily="@font/poppins"
+        android:textAllCaps="false"
+        android:text="About Author"
+        android:textColor="#F1B605" />
+
+<!--    <Button-->
+<!--        android:id="@+id/galeri"-->
+<!--        android:layout_width="107dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_marginLeft="210dp"-->
+<!--        android:layout_marginTop="250dp"-->
+<!--        android:textColor="#F1B605"-->
+<!--        android:backgroundTint="#ffff"-->
+<!--        android:onClick="galeri"-->
+<!--        android:text="galeri" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/kopi"-->
+<!--        android:layout_width="226dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:textColor="#F1B605"-->
+<!--        android:backgroundTint="#ffff"-->
+<!--        android:layout_marginLeft="90dp"-->
+<!--        android:layout_marginTop="300dp"-->
+<!--        android:text="pesan kopi yuk!"-->
+<!--        android:onClick="kopi" />-->
+
+    <Button
+        android:id="@+id/baca"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#F1B605"
+        android:backgroundTint="#ffff"
+        android:layout_centerInParent="true"
+        android:text="Teknologi"
+        android:fontFamily="@font/poppins"
+        android:textAllCaps="false"
+        android:onClick="berita" />
+
+    <Button
+        android:id="@+id/kesehatan"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_below="@id/baca"
+        android:textColor="#F1B605"
+        android:fontFamily="@font/poppins"
+        android:textAllCaps="false"
+        android:backgroundTint="#ffff"
+        android:layout_centerInParent="true"
+        android:text="Kesehatan"
+        android:onClick="kesehatan" />
+
+    <Button
+        android:id="@+id/enter"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_below="@id/kesehatan"
+        android:textColor="#F1B605"
+        android:fontFamily="@font/poppins"
+        android:textAllCaps="false"
+        android:backgroundTint="#ffff"
+        android:layout_centerInParent="true"
+        android:text="Entertainment"
+        android:onClick="enter"/>
+
+    <Button
+        android:id="@+id/science"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_below="@id/enter"
+        android:textColor="#F1B605"
+        android:backgroundTint="#ffff"
+        android:layout_centerInParent="true"
+        android:text="Science"
+        android:fontFamily="@font/poppins"
+        android:textAllCaps="false"
+        android:onClick="science"/>
+
+    <Button
+        android:id="@+id/olahraga"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_above="@id/baca"
+        android:textColor="#F1B605"
+        android:fontFamily="@font/poppins"
+        android:textAllCaps="false"
+        android:backgroundTint="#ffff"
+        android:layout_centerInParent="true"
+        android:text="Olahraga"
+        android:onClick="olahraga" />
+
+    <Button
+        android:id="@+id/headline"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/poppins"
+        android:textAllCaps="false"
+        android:layout_above="@id/olahraga"
+        android:textColor="#F1B605"
+
+        android:backgroundTint="#ffff"
+        android:layout_centerInParent="true"
+        android:text="Top Headline"
+        android:onClick="headline" />
+
+    <Button
+        android:id="@+id/feedback"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:textColor="#F1B605"
+        android:backgroundTint="#00FFFFFF"
+        android:layout_marginLeft="90dp"
+        android:layout_marginBottom="16dp"
+        android:layout_above="@id/textView"
+        android:text="Feedback About This App"
+        android:fontFamily="@font/poppins"
+        android:textAllCaps="false"
+        android:onClick="kopi"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp"
+        android:text="© Muhammad Siddiq L | 2019 for TUBES"
+        android:textColor="#3F51B5"
+        android:fontFamily="@font/tekton"
+        android:textSize="14sp" />
+
+</RelativeLayout>
